@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+	 <div id='content'></div>
+
+    <script type="text/babel">
+
+		var ARTICLE = {
+			title : 'Test',
+			author : 'Artem',
+			body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quis accusantium quidem, nesciunt magnam quam doloremque neque commodi repudiandae placeat iure! Rerum deserunt asperiores expedita voluptate, quam dignissimos facere ipsam.'
+		};
+
+    	 var Article = React.createClass({
+    	 
+        	render:function(){
+        		return <div>
+        			<h3>{this.props.title}</h3>
+        			<div>
+        				<p>{this.props.author}</p>
+        				<p>{this.props.body}</p>
+        			</div>
+        		</div>
+        	}
+        });
+
+        ReactDOM.render(
+            <Article title={ARTICLE.title} author={ARTICLE.author} body={ARTICLE.body}/>,
+            document.getElementById("content")
+        );
+    </script>
+</body>
+</html>

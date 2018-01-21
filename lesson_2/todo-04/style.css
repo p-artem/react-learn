@@ -1,0 +1,95 @@
+.to-do-app {
+  color: #161616;
+  width: 100%;
+  max-width: 600px;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+.to-do-app input {
+  width: 100%;
+  font-size: 27px;
+  font-weight: 400;
+  border: 2px solid #c0c0c0;
+  padding: 35px 40px;
+}
+.to-do-app input:focus {
+  outline: 0;
+}
+.to-do-app .to-do-list {
+  width: 100%;
+  border: 2px solid #cacaca;
+  border-top: none;
+  padding: 25px 40px;
+  margin: 0;
+}
+.to-do-app .to-do-list .to-do {
+  display: block;
+  list-style-type: none;
+  font-size: 30px;
+  margin-top: 25px;
+}
+.to-do-app .to-do-list .to-do .text {
+  width: 82%;
+  display: inline-block;
+  font-size: 33px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.to-do-app .to-do-list .to-do span:first-letter {
+  text-transform: uppercase;
+}
+.to-do-app .to-do-list .to-do .delete-task {
+  float: right;
+  color: #cacaca;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.to-do-app .to-do-list .to-do:first-child {
+  margin-top: 0;
+}
+.to-do-app .to-do-list .to-do:first-letter {
+  text-transform: uppercase;
+}
+.to-do-app .to-do-list .to-do .accept {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 20px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAwCAYAAADn/d+1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjMyOTAzNzkyM0ZDMTFFNkIyNThGRjJGNjlBMDg3ODAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjMyOTAzN0EyM0ZDMTFFNkIyNThGRjJGNjlBMDg3ODAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMzI5MDM3NzIzRkMxMUU2QjI1OEZGMkY2OUEwODc4MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyMzI5MDM3ODIzRkMxMUU2QjI1OEZGMkY2OUEwODc4MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pum/C18AAAjISURBVHja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);
+}
+.to-do-app .to-do-list .to-do.done .text {
+  color: #cacaca;
+  font-weight: 300;
+  text-decoration: line-through;
+}
+.to-do-app .to-do-list .to-do.done .accept {
+  background-position: -51px 0;
+}
+.to-do-app .to-do-sort {
+  width: 100%;
+  text-align: center;
+  padding: 18px 40px;
+  margin: 0 auto;
+}
+.to-do-app .to-do-sort li {
+  color: #cacaca;
+  display: inline-block;
+  list-style-type: none;
+  font-size: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.to-do-app .to-do-sort li.active {
+  color: #161616;
+}
+.to-do-app .to-do-sort li:first-letter {
+  text-transform: uppercase;
+}
+.to-do-app .to-do-sort li:first-child {
+  margin-left: 0;
+}
